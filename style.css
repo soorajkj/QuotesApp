@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(25, 0, 49);
+    padding: 100px 0px;
+
+}
+.q-wrapper{
+    padding: 40px;
+    max-width: 900px;
+    margin-bottom: 50px;
+}
+.q-head{
+    font-size: 60px;
+    display: flex;
+}
+.quote{
+    font-size: 50px;
+    font-family: 'Courgette', cursive;
+    margin-bottom: 30px;
+    color: white;
+}
+
+span{
+    opacity: .6;
+    font-size: 90px;
+    padding: 5px;
+    color: blueviolet;
+}
+
+.author{
+    font-size: 35px;
+    color: rgb(109, 105, 105);
+    font-family: 'Caveat', cursive;
+}
+.btn-generate{
+    padding: 10px 30px;
+    font-size: 25px;
+    background-color: blueviolet;
+    border: none;
+    color: #ffffff;
+    font-family: 'Caveat', cursive;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-generate:focus{
+    outline: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .quote {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+    }
+    span{
+        font-size: 80px;
+        margin-bottom: 10px;
+        height: 50px;
+    }
+    .author{
+        border-top: 1px solid blueviolet;
+        padding: 10px;
+        font-size: 25px;
+    }
+    .btn-generate{
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 30px;
+        font-size: 25px;
+        background-color: blueviolet;
+        border: none;
+        color: #ffffff;
+        font-family: 'Caveat', cursive;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+  }
+
+  @media only screen and (max-width: 800px) and (min-width: 500px){
+    .q-wrapper{
+        margin: 0px 20px;
+    }
+    .quote {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+    }
+  }
