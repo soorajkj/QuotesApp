@@ -10,9 +10,7 @@ if(localStorage.getItem('q')){
         container.innerHTML = 
         `
         <div class="q-wrapper">
-        <div class="q-head">
-        <blockquote class="quote"><span>"</span>${lq2.text}</blockquote>
-        </div>
+        <blockquote class="quote">${lq2.text}</blockquote>
         <p class="author">${lq2.author}</p>
         </div>
         `; 
@@ -21,8 +19,7 @@ if(localStorage.getItem('q')){
     else{
         container.innerHTML =
         `<div class="q-wrapper">
-        <div class="q-head">
-        <blockquote class="quote"><span>"</span>${lq2.text}</blockquote>
+        <blockquote class="quote">${lq2.text}</blockquote>
         </div> ` 
     }
 }
@@ -35,9 +32,7 @@ btn.addEventListener('click', () =>{
             container.innerHTML = 
             `
             <div class="q-wrapper">
-            <div class="q-head">
-            <blockquote class="quote"><span>"</span>${data.text}</blockquote>
-            </div>
+            <blockquote class="quote">${data.text}</blockquote>
             <p class="author">${data.author}</p>
             </div>
             `; 
@@ -46,8 +41,7 @@ btn.addEventListener('click', () =>{
         else{
             container.innerHTML =
             `<div class="q-wrapper">
-            <div class="q-head">
-            <blockquote class="quote"><span>"</span>${data.text}</blockquote>
+            <blockquote class="quote">${data.text}</blockquote>
             </div> ` 
         }
 
